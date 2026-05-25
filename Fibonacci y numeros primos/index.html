@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci y Primos</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+
+<body>
+
+    <!-- PORTADA -->
+    <header class="portada">
+        <h1>Matemáticas en la Vida Real</h1>
+        <p>Fibonacci y Números Primos</p>
+    </header>
+
+    <!-- CONTENIDO -->
+    <div class="contenedor">
+
+        <!-- FIBONACCI -->
+        <section class="card">
+            <h2>Serie de Fibonacci</h2>
+
+            <form onsubmit="calcularFibo(event)">
+                <input type="number" id="fiboNum" placeholder="Cantidad de números" required>
+                <button type="submit">Calcular</button>
+            </form>
+
+            <p id="resultadoFibo"></p>
+        </section>
+
+        <!-- PRIMOS -->
+        <section class="card">
+            <h2> Números Primos</h2>
+
+            <form onsubmit="verificarPrimo(event)">
+                <input type="number" id="primoNum" placeholder="Ingresa un número" required>
+                <button type="submit">Verificar</button>
+            </form>
+
+            <p id="resultadoPrimo"></p>
+        </section>
+
+    </div>
+
+    <script src="./JAVASCRIPT/fiboyprimos.js"></script>
+</body>
+
+</html>

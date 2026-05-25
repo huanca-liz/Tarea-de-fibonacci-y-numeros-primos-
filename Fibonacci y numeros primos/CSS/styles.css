@@ -1,0 +1,85 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #31e5c4, #9face6);
+}
+
+
+/* PORTADA */
+
+.portada {
+    text-align: center;
+    padding: 40px;
+    color: rgb(240, 12, 12);
+}
+
+.portada h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.portada p {
+    font-size: 18px;
+}
+
+
+/* CONTENEDOR */
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+/* TARJETAS */
+
+.card {
+    background: rgb(240, 175, 175);
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    color: #245d95;
+}
+
+
+/* INPUTS */
+
+input,
+button {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+}
+
+button {
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
